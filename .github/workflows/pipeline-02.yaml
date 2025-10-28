@@ -1,0 +1,13 @@
+name: pindamonhangaba
+on: push
+jobs:
+  ci:
+    name: teste de ci
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Olá, Fatec!"
+        name: Mensagem especial
+      - uses: actions/checkout@v5
+        name: fazendo clone e checkout no meu repositório
+      - name: zipar os arquivos
+        run: ls -la
